@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aditya Gabale — Resume</title>
+  <meta name="description" content="Resume of Aditya Gabale — Technology Leader, POD Lead, Application Owner.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aditya Gabale",
+    "jobTitle": "Technology Leader | POD Lead | Application Owner",
+    "url": "https://adityagabale.github.io/online-cv/",
+    "address": {"@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN"},
+    "sameAs": [
+      "https://www.linkedin.com/in/adityagabale",
+      "https://github.com/adityagabale"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 id="name">Aditya Gabale</h1>
+        <p id="label" class="subtitle">Technology Leader | POD Lead | Application Owner</p>
+      </div>
+      <div class="actions">
+        <button id="modeToggle" class="btn ghost" aria-label="Toggle dark mode">🌙</button>
+        <a id="downloadPdf" class="btn" href="#" onclick="window.print();return false;">Download PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card intro">
+      <div class="contact">
+        <ul>
+          <li>📧 <a id="email" href="#"></a></li>
+          <li>🔗 <a id="website" href="#" target="_blank" rel="noreferrer">Website</a></li>
+          <li>📍 <span id="location">Pune, India</span></li>
+        </ul>
+      </div>
+      <p id="summary" class="summary"></p>
+      <div class="chips" id="highlights"></div>
+    </section>
+
+    <section class="card">
+      <h2>Experience</h2>
+      <div id="experience"></div>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>Skills</h2>
+        <div id="skills" class="skill-groups"></div>
+      </div>
+      <div class="card">
+        <h2>Profiles</h2>
+        <ul id="profiles" class="profiles"></ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Aditya Gabale • Theme: “Chikorita-style” (MIT)</small>
+    </footer>
+  </main>
+</body>
+</html>

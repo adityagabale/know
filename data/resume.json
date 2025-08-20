@@ -1,0 +1,141 @@
+{
+  "basics": {
+    "name": "Aditya Gabale",
+    "label": "Technology Leader | POD Lead | Application Owner",
+    "email": "your.email@example.com",
+    "phone": "+91-XXXXXXXXXX",
+    "url": "https://adityagabale.github.io/online-cv/",
+    "summary": "Senior engineering leader with 15+ years in banking & payments technology. Hands-on expertise in Java (up to 17), Spring Boot, microservices, cloud, and low-latency distributed systems. Proven ability to drive architecture, modernization, and delivery for mission-critical platforms while mentoring teams and aligning technology with business priorities.",
+    "location": {
+      "address": "Pune, India"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "adityagabale",
+        "url": "https://www.linkedin.com/in/adityagabale"
+      },
+      {
+        "network": "GitHub",
+        "username": "adityagabale",
+        "url": "https://github.com/adityagabale"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "HSBC",
+      "position": "Associate Director",
+      "url": "https://www.hsbc.com",
+      "startDate": "2023-05",
+      "summary": "Driving architecture and delivery for fixed income & payments platforms. Leading PODs, mentoring engineers, and partnering with product owners to align technology strategy.",
+      "highlights": [
+        "Cut processing latency from 5 minutes to 5ms via advanced caching & routing",
+        "Enabled zero-downtime deployments across 45+ microservices",
+        "Automated disaster recovery with Jenkins & Rundeck"
+      ]
+    },
+    {
+      "name": "HSBC",
+      "position": "Senior Consultant Specialist (AVP)",
+      "startDate": "2021-03",
+      "endDate": "2023-05",
+      "summary": "Application Owner managing end-to-end technical project lifecycle and performance management.",
+      "highlights": [
+        "Shaped technical direction via architecture forums",
+        "Mentored teams on modern stack (Spring Boot, cloud, Kafka, Solace)"
+      ]
+    },
+    {
+      "name": "HSBC",
+      "position": "Consultant Specialist",
+      "startDate": "2019-03",
+      "endDate": "2021-02",
+      "summary": "POD Lead and Tech Lead for Fixed Income projects.",
+      "highlights": [
+        "Led POD delivery and architecture decisions",
+        "Hands-on coding in low-latency trading systems"
+      ]
+    },
+    {
+      "name": "Persistent Systems (for Oracle)",
+      "position": "Senior Software Engineer",
+      "startDate": "2014-04",
+      "endDate": "2015-03",
+      "summary": "IAM product development consultant.",
+      "highlights": [
+        "Developed connector library for Oracle E-Business Suite",
+        "Delivered scalable IAM solutions using Java & Oracle frameworks"
+      ]
+    },
+    {
+      "name": "Oracle India (via Persistent)",
+      "position": "Java Developer",
+      "startDate": "2014-04",
+      "endDate": "2015-03",
+      "summary": "Java development for Oracle IAM connectors."
+    },
+    {
+      "name": "Cognizant Technology Solutions",
+      "position": "Programmer Analyst",
+      "startDate": "2011-12",
+      "endDate": "2014-03",
+      "summary": "Worked on Azure PAAS platform and cloud automation.",
+      "highlights": [
+        "Developed monitoring plugins & automated tools",
+        "Received Above & Beyond Award for contributions to Cloud360"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming & Frameworks",
+      "keywords": [
+        "Java 17",
+        "Spring Boot",
+        "Microservices",
+        "gRPC",
+        "Calypso"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": [
+        "AWS",
+        "Azure",
+        "Linux",
+        "CI/CD",
+        "Jenkins",
+        "Rundeck"
+      ]
+    },
+    {
+      "name": "Messaging & Distributed Systems",
+      "keywords": [
+        "Kafka",
+        "Solace",
+        "MQ",
+        "Low-latency trading systems"
+      ]
+    },
+    {
+      "name": "Security & IAM",
+      "keywords": [
+        "Keycloak",
+        "SSO",
+        "OAuth2",
+        "Identity Management"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "POD Leadership",
+        "Architecture Strategy",
+        "Mentoring",
+        "Agile",
+        "DevOps"
+      ]
+    }
+  ]
+}

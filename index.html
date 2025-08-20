@@ -1,76 +1,303 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aditya Gabale — Resume</title>
-  <meta name="description" content="Resume of Aditya Gabale — Technology Leader, POD Lead, Application Owner.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Aditya Gabale",
-    "jobTitle": "Technology Leader | POD Lead | Application Owner",
-    "url": "https://adityagabale.github.io/online-cv/",
-    "address": {"@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN"},
-    "sameAs": [
-      "https://www.linkedin.com/in/adityagabale",
-      "https://github.com/adityagabale"
-    ]
-  }
-  </script>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1 id="name">Aditya Gabale</h1>
-        <p id="label" class="subtitle">Technology Leader | POD Lead | Application Owner</p>
-      </div>
-      <div class="actions">
-        <button id="modeToggle" class="btn ghost" aria-label="Toggle dark mode">🌙</button>
-        <a id="downloadPdf" class="btn" href="#" onclick="window.print();return false;">Download PDF</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="card intro">
-      <div class="contact">
-        <ul>
-          <li>📧 <a id="email" href="#"></a></li>
-          <li>🔗 <a id="website" href="#" target="_blank" rel="noreferrer">Website</a></li>
-          <li>📍 <span id="location">Pune, India</span></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Resume of Aditya Gabale — Technology Leader, POD Lead, Application Owner" />
+    <meta name="author" content="Aditya Gabale" />
+    <title>Aditya Gabale — Resume</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Spacing + skills-label overrides -->
+    <style>
+      /* Reduce vertical whitespace between sections */
+      .resume-section { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
+      .resume-section .mb-5 { margin-bottom: 1rem !important; }
+      /* Tighten experience item spacing */
+      .resume-section-content .d-flex.mb-5 { margin-bottom: 1rem !important; }
+      .resume-section-content .d-flex.mb-5:last-child { margin-bottom: .75rem !important; }
+      /* Skill list with text labels beside icons */
+      .skills-grid { display: flex; flex-wrap: wrap; gap: .6rem .9rem; }
+      .skill-pill {
+        display: inline-flex; align-items: center; gap: .5rem;
+        padding: .35rem .6rem; border: 1px solid rgba(0,0,0,.1);
+        border-radius: 999px; background: rgba(0,0,0,.03);
+        font-size: .95rem;
+      }
+      .skill-pill i { font-size: 1.1rem; }
+      /* Slightly smaller bullets spacing */
+      .fa-ul li { margin-bottom: .35rem; }
+      /* Reduce padding between Education and Skills sections to minimum */
+      #education.resume-section {
+        padding-bottom: 0rem !important;
+      }
+      #education .resume-section-content > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      #skills.resume-section {
+        padding-top: 0rem !important;
+      }
+      #skills .resume-section-content > *:first-child {
+        margin-top: 0 !important;
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Aditya Gabale</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/img.png" alt="Profile" />
+        </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Licenses & Certifications</a></li>
         </ul>
       </div>
-      <p id="summary" class="summary"></p>
-      <div class="chips" id="highlights"></div>
-    </section>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+      <!-- About-->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            Aditya
+            <span class="text-primary">Gabale</span>
+          </h1>
+          <div class="subheading mb-4">
+            Pune, India · +91-XXXXXXXXXX ·
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
+          </div>
+          <p class="lead mb-4">
+            Technology Leader (Associate Director) with 15+ years in banking & payments technology.
+            Hands-on in Java (up to 17), Spring Boot, microservices, cloud, and low‑latency distributed trading systems.
+            I drive architecture, modernization and delivery for mission‑critical platforms, partnering with product owners to align technology strategy with business outcomes.
+          </p>
+          <ul class="mb-4">
+            <li>Cut processing latency from <strong>5 minutes to 5ms</strong> using advanced caching & message routing.</li>
+            <li>Zero‑downtime deployments and resilience across <strong>45+ microservices</strong>.</li>
+            <li>Pioneered migration to <strong>Java 17</strong>, eliminating vulnerabilities and improving performance.</li>
+            <li>Architected <strong>trade version sequencing</strong> in a distributed trading platform.</li>
+            <li>Implemented <strong>Keycloak SSO</strong>, ElasticSearch fuzzy search, and HTTP/2 server‑sent events.</li>
+            <li>Built <strong>one‑touch DR</strong> with Jenkins + Rundeck.</li>
+          </ul>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com/in/adityagabale" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://github.com/adityagabale" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://adityagabale.github.io/online-cv/" target="_blank" rel="noreferrer"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Experience-->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-4">Experience</h2>
 
-    <section class="card">
-      <h2>Experience</h2>
-      <div id="experience"></div>
-    </section>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Associate Director</h3>
+              <div class="subheading mb-2">HSBC</div>
+              <p>Driving architecture and delivery for fixed income & payments platforms. Leading PODs, mentoring engineers, and partnering with product owners to align technology strategy.</p>
+              <ul>
+                <li>Zero‑downtime releases, SLO/SLA driven reliability for 45+ microservices.</li>
+                <li>Latency reduction from minutes to milliseconds through caching & routing.</li>
+                <li>Automated DR runbooks with Jenkins & Rundeck.</li>
+              </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">May 2023 – Present · Pune</span></div>
+          </div>
 
-    <section class="grid-2">
-      <div class="card">
-        <h2>Skills</h2>
-        <div id="skills" class="skill-groups"></div>
-      </div>
-      <div class="card">
-        <h2>Profiles</h2>
-        <ul id="profiles" class="profiles"></ul>
-      </div>
-    </section>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Senior Consultant Specialist (AVP)</h3>
+              <div class="subheading mb-2">HSBC</div>
+              <p>Application Owner for mission‑critical services. Managed end‑to‑end lifecycle, performance, and mentoring. Active in architecture forums to drive modernization.</p>
+              <ul>
+                <li>Led migration to Java 17 for Spring services, reducing CVEs.</li>
+                <li>Improved observability and incident response.</li>
+              </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">Mar 2021 – May 2023 · Pune</span></div>
+          </div>
 
-    <footer class="footer">
-      <small>© <span id="year"></span> Aditya Gabale • Theme: “Chikorita-style” (MIT)</small>
-    </footer>
-  </main>
-</body>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Consultant Specialist</h3>
+              <div class="subheading mb-2">HSBC</div>
+              <p>POD Lead / Tech Lead for Fixed Income projects; split between architecture and hands‑on delivery in low‑latency trading.</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">Mar 2019 – Feb 2021 · Pune</span></div>
+          </div>
+
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Senior Software Engineer (for Oracle)</h3>
+              <div class="subheading mb-2">Persistent Systems</div>
+              <p>IAM product development; built connector library for Oracle E‑Business Suite and delivered scalable IAM solutions on Java & Oracle frameworks.</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">Apr 2014 – Mar 2015 · Pune</span></div>
+          </div>
+
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Java Developer (via Persistent)</h3>
+              <div class="subheading mb-2">Oracle India Pvt. Ltd.</div>
+              <p>Java development for Oracle IAM connectors integrating with Oracle E‑Business Suite.</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">Apr 2014 – Mar 2015 · Pune</span></div>
+          </div>
+
+          <div class="d-flex flex-column flex-md-row justify-content-between mt-3">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Programmer Analyst</h3>
+              <div class="subheading mb-2">Cognizant Technology Solutions</div>
+              <p>SPOC for Azure PaaS product platform; built monitoring plugins and automation tooling; worked on cloud initiatives across Azure & AWS.</p>
+              <ul>
+                <li><strong>Above & Beyond</strong> award for contributions to Cloud360.</li>
+              </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">Dec 2011 – Mar 2014 · Bangalore & Hyderabad</span></div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+      <!-- Skills-->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+          <h2 class="mb-4">Skills</h2>
+          <div class="subheading mb-2">Programming Languages & Tools</div>
+          <div class="skills-grid mb-3">
+            <span class="skill-pill"><i class="fa-brands fa-java" aria-hidden="true"></i><span>Java 17</span></span>
+            <span class="skill-pill"><i class="fa-solid fa-leaf" aria-hidden="true"></i><span>Spring Boot</span></span>
+            <span class="skill-pill"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i><span>Solace / MQ</span></span>
+            <span class="skill-pill"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>gRPC</span></span>
+            <span class="skill-pill"><i class="fa-solid fa-network-wired" aria-hidden="true"></i><span>REST (HTTP/2)</span></span>
+            <span class="skill-pill"><i class="fa-brands fa-linux" aria-hidden="true"></i><span>Linux</span></span>
+            <span class="skill-pill"><i class="fa-solid fa-gears" aria-hidden="true"></i><span>Jenkins</span></span>
+            <span class="skill-pill"><i class="fa-solid fa-rocket" aria-hidden="true"></i><span>Rundeck</span></span>
+            <span class="skill-pill"><i class="fa-brands fa-docker" aria-hidden="true"></i><span>Docker</span></span>
+            <span class="skill-pill"><i class="fa-solid fa-key" aria-hidden="true"></i><span>Keycloak / IAM</span></span>
+          </div>
+          <div class="subheading mb-2">Cloud Fundamentals (Provider‑agnostic)</div>
+          <ul class="fa-ul mb-2">
+            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Elasticity & Auto‑Scaling:</strong> design stateless services, right‑size & scale horizontally to handle variable load.</li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Cost Awareness & Billing Control:</strong> tagging, budgets/alerts, idle resource cleanup, usage dashboards & periodic reviews.</li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>When Not to Use Cloud:</strong> predictable steady workloads, strict data residency/latency, high egress; evaluate long‑term TCO.</li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Good vs Bad:</strong> managed services & speed vs vendor lock‑in & surprise costs; use guardrails and SLAs.</li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Licenses & Certifications-->
+      <section class="resume-section" id="certifications">
+        <div class="resume-section-content">
+          <h2 class="mb-4">Licenses & Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+              <div>
+                <strong>Project Management Foundations</strong><br />
+                <span class="subheading">Project Management Institute (PMI)</span><br />
+                <span class="text-muted">Issued Aug 2022</span>
+              </div>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+              <div>
+                <strong>Kubernetes — Hands‑on</strong><br />
+                <span class="subheading">Udemy</span><br />
+                <span class="text-muted">Issued Jan 2022</span>
+              </div>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+              <div>
+                <strong>Solace Certified Solution Consultant</strong><br />
+                <span class="subheading">Solace</span><br />
+                <span class="text-muted">Issued Jun 2021</span>
+              </div>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+              <div>
+                <strong>Elastic Cloud Infrastructure: Containers and Services</strong><br />
+                <span class="subheading">Coursera</span><br />
+                <span class="text-muted">Issued Aug 2019</span><br />
+                <span>Credential ID: <code>NZ7FXR9SCHPQ</code></span>
+              </div>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+              <div>
+                <strong>Essential Cloud Infrastructure: Core Services</strong><br />
+                <span class="subheading">Coursera</span><br />
+                <span class="text-muted">Issued Aug 2019</span>
+              </div>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+              <div>
+                <strong>Google Cloud Platform Fundamentals: Core Infrastructure</strong><br />
+                <span class="subheading">Coursera</span><br />
+                <span class="text-muted">Issued Aug 2019</span><br />
+                <span>Credential ID: <code>SZLTMZKQ5JH8</code></span>
+              </div>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+              <div>
+                <strong>Oracle Certified Professional, Java SE 6 Programmer</strong><br />
+                <span class="subheading">Oracle</span><br />
+                <span class="text-muted">Issued Jul 2012</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Education-->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-4">Education</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">SVERI's College Of Engineering</h3>
+              <div class="subheading mb-2">Solapur University — Computer Science</div>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">2007 – 2011</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

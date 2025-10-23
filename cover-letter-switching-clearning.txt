@@ -1,0 +1,21 @@
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the Director, Software Development Engineering – Switching Solutions role at Mastercard.
+With over 15 years of experience leading mission-critical, low-latency systems in financial services, I believe I bring the architectural depth, global leadership, and outcome-driven engineering mindset this position demands.
+
+At HSBC, I have led the design and delivery of real-time risk and pricing platforms, integrating live market data to provide accurate valuations for complex financial products. These systems required the same characteristics that Mastercard’s switching infrastructure demands—low latency, high throughput, resiliency, and zero downtime. Some highlights include:
+
+Supervised 20+ direct reports and guided 40+ indirect contributors globally, serving as functional manager for overseas teams and both people and functional lead in India.
+
+Achieved latency reduction from minutes to milliseconds through advanced caching and routing strategies, delivering direct cost savings and improving our competitive edge with an estimated ~20% uplift in bid win-rate.
+
+Delivered zero-downtime deployments and resilience across 45+ microservices, with SLOs tied to availability, error rates, and recovery objectives.
+
+Modernized core systems by migrating to Java 17, embedding secure coding practices, integrating static analysis into CI/CD, and driving blameless postmortems to reduce MTTM and strengthen reliability.
+
+What excites me about this opportunity is the chance to bring my real-time engineering expertise to Mastercard’s switching backbone, where every millisecond matters and resiliency at scale is non-negotiable. While my professional background has been in capital markets risk and pricing, the underlying engineering problems—processing real-time data, guaranteeing correctness, ensuring resilience under load—are the same challenges that define payment switching. I am enthusiastic to extend my expertise into this domain and help Mastercard scale and innovate its core network infrastructure.
+
+I would welcome the opportunity to discuss how my experience building real-time systems and leading globally distributed teams can contribute to Mastercard’s mission of delivering secure, reliable, and innovative payment solutions. Thank you for your time and consideration.
+
+Warm regards,
+Aditya Gabale

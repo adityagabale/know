@@ -1,0 +1,24 @@
+Dear Hiring Manager,
+
+I am writing to express my interest in the Director, Software Engineering – Transfer Solutions role. With 14+ years in building low-latency, mission-critical platforms in banking and payments, and recent leadership as an Associate Director at HSBC, I bring a blend of hands-on engineering depth and organizational leadership that maps directly to your JD’s emphasis on secure coding, high availability, real-time systems, and engineering excellence.
+
+Across my roles, I’ve led modernization and reliability programs for platforms that process time-sensitive financial transactions at scale. Highlights relevant to Transfer Solutions:
+
+Engineered for speed and reliability: Cut processing latency from 5 minutes to 5 ms on a distributed trading platform; drove zero-downtime releases across 45+ microservices and matured SLOs around availability, latency, and error rates.
+
+Security & code quality by default: Embedded OWASP/CWE/SEI-CERT practices; integrated SonarQube and Checkmarx into CI/CD; promoted trunk-based development and rigorous peer reviews to raise the performance bar.
+
+Resilience culture: Led blameless postmortems and incident analysis to reduce MTTM while sustaining 99.95%+ availability objectives; improved observability to accelerate detection and mitigation.
+
+Architecture & patterns: Applied API Gateway, Service-to-Worker, Observer, Strategy, and dependency injection to simplify flows, improve maintainability, and scale securely; delivered Java 17 migrations to eliminate CVEs and improve throughput.
+
+Hands-on leadership: I remain a practical technologist (Java/Spring Boot, CI/CD, infra-as-code exposure) while coaching teams, interviewing candidates, and writing fair, evidence-based promotion recommendations.
+
+What draws me to Transfer Solutions is Mastercard’s ambition to lead real-time, account-to-account and cross-border payment flows—a space where engineering rigor, security, and customer-journey thinking converge. My background in low-latency systems and payments engineering fits the role’s expectation to “lead by example”—coding where it matters, setting strong technical standards, and building teams that automate, simplify, and ship safely.
+
+I am Pune-based and excited about contributing to Mastercard’s growth here. I would welcome the opportunity to discuss how I can help the team deliver reliable, secure, and scalable payment experiences that reflect Mastercard’s DQ culture and real-time strategy.
+
+Thank you for your time and consideration.
+
+Sincerely,
+Aditya Gabale

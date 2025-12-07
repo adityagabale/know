@@ -133,6 +133,8 @@
                 <li>Championed <strong>trunk-based development</strong>, <strong>code reviews</strong>, and <strong>CI/CD</strong> with SonarQube/Checkmarx for continuous compliance.</li>
                 <li>Led <strong>blameless postmortems</strong> and resilience improvements to reduce <strong>MTTM</strong> and sustain <strong>99.95%+</strong> availability targets.</li>
                 <li>Applied advanced design patterns (<em>API Gateway, Service-to-Worker, Strategy, Observer</em>) to improve scalability and maintainability.</li>
+                <li>Designed and enforced <strong>backpressure</strong> and <strong>flow-control</strong> strategies for streaming and RPC flows (Reactive Streams, Reactor/RxJava, consumer pause/resume, bounded queues) to prevent unbounded buffering and ensure graceful degradation.</li>
+                <li>Implemented <strong>rate limiting</strong> and throttling (token-bucket, leaky-bucket, API gateway quotas) at service boundaries and SLO-driven throttles to protect downstream systems and maintain stability during bursts.</li>
                 <li>Scaled and managed global teams: <strong>20+ direct</strong> and <strong>40+ indirect</strong>;
                     functional manager for non-India locations, and both <strong>people manager</strong> & <strong>functional lead</strong> for India.
                 </li>
@@ -171,6 +173,10 @@
                         <li><!-- ADDED -->Implemented <strong>trunk-based development</strong> and integrated <strong>SonarQube</strong>/<strong>Checkmarx</strong> into CI/CD to uplift code quality and security.</li>
                         <li><!-- ADDED -->Drove <strong>blameless postmortems</strong> and production hardening to lower <strong>MTTM</strong> and sustain <strong>99.95%+</strong> availability objectives.</li>
                         <li><!-- ADDED -->Provided <strong>architecture guidance</strong> across teams; applied patterns like <em>API Gateway</em> and <em>Service-to-Worker</em> for scalable microservices.</li>
+
+                        <!-- ADDED: Backpressure & Rate limiting -->
+                        <li><!-- ADDED -->Designed and enforced <strong>backpressure</strong> and <strong>flow-control</strong> strategies for streaming and RPC flows (Reactive Streams, Reactor/RxJava, consumer pause/resume, bounded queues) to prevent unbounded buffering and ensure graceful degradation.</li>
+                        <li><!-- ADDED: Rate limiting -->Implemented <strong>rate limiting</strong> and throttling using quotas per client at service boundaries and SLO-driven throttles to protect downstream systems, reduce OOMs, and maintain stability during burst traffic.</li>
                     </ul>
                 </div>
                 <div class="flex-shrink-0"><span class="text-primary">May 2023 – Present · Pune</span></div>
@@ -205,6 +211,7 @@
                     <ul><!-- ADDED -->
                         <li><!-- ADDED -->Applied <strong>Observer/Strategy</strong> patterns to optimize throughput and maintainability in latency-sensitive flows.</li>
                         <li><!-- ADDED -->Partnered with product to align engineering with <strong>customer journeys</strong> and reduce operational friction.</li>
+                        <li><!-- ADDED -->Implemented <strong>backpressure-aware</strong> streaming pipelines using Reactor/RxJava and Kafka; applied bounded buffering, consumer pause/resume and exponential backoff to ensure graceful degradation under burst traffic.</li>
                     </ul><!-- ADDED -->
                 </div>
                 <div class="flex-shrink-0"><span class="text-primary">Mar 2019 – Feb 2021 · Pune</span></div>
@@ -296,6 +303,10 @@
                 <span class="skill-pill"><!-- ADDED --><i class="fa-solid fa-vial" aria-hidden="true"></i><span>TDD / BDD</span></span>
                 <span class="skill-pill"><!-- ADDED --><i class="fa-solid fa-diagram-next" aria-hidden="true"></i><span>API Gateway</span></span>
                 <span class="skill-pill"><!-- ADDED --><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i><span>Design Patterns</span></span>
+
+                <!-- ADDED: Backpressure & Rate Limiting -->
+                <span class="skill-pill"><!-- ADDED --><i class="fa-solid fa-water" aria-hidden="true"></i><span>Backpressure & Flow Control (Reactive Streams, Kafka)</span></span>
+                <span class="skill-pill"><!-- ADDED --><i class="fa-solid fa-gauge" aria-hidden="true"></i><span>Rate Limiting (Token-bucket, Leaky-bucket)</span></span>
             </div>
 
             <div class="subheading mb-2">Cloud Fundamentals (Provider-agnostic)</div>

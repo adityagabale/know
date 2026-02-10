@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="One-page Resume of Aditya Gabale — Technology Leader, POD Lead, Application Owner" />
+    <meta name="author" content="Aditya Gabale" />
+    <title>Aditya Gabale — One-Page Resume</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.5;
+            color: #2c3e50;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 8.5in;
+            height: 11in;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 22%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .profile-section {
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-title {
+            font-size: 11px;
+            font-weight: 600;
+            opacity: 0.9;
+            margin-top: 3px;
+        }
+
+        .sidebar-section {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .sidebar-section h3 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            opacity: 0.95;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .contact-info {
+            font-size: 11px;
+            word-break: break-word;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            font-size: 10px;
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 3px 7px;
+            border-radius: 3px;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding-top: 10px;
+
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 30px 25px;
+            overflow-y: auto;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .main-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .main-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .main-content::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 3px;
+        }
+
+        .header {
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 3px;
+        }
+
+        .tagline {
+            font-size: 10px;
+            color: #7f8c8d;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .section {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .job-entry {
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px dotted #ecf0f1;
+        }
+
+        .job-entry:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 11px;
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 10px;
+            margin-top: 1px;
+        }
+
+        .job-period {
+            font-size: 9px;
+            color: #95a5a6;
+            font-weight: 500;
+        }
+
+        .job-description {
+            font-size: 10px;
+            color: #555;
+            margin-top: 3px;
+            line-height: 1.35;
+        }
+
+        .highlights {
+            margin-top: 4px;
+            margin-left: 12px;
+        }
+
+        .highlights li {
+            list-style: none;
+            margin-bottom: 2px;
+            position: relative;
+            padding-left: 10px;
+            font-size: 10px;
+            line-height: 1.3;
+            color: #555;
+        }
+
+        .highlights li:before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .highlights strong {
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .education-entry {
+            margin-bottom: 8px;
+        }
+
+        .education-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .degree {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 11px;
+        }
+
+        .university {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 10px;
+            margin-top: 1px;
+        }
+
+        .grad-year {
+            font-size: 9px;
+            color: #95a5a6;
+            font-weight: 500;
+        }
+
+        .cert-item {
+            margin-bottom: 6px;
+            padding-bottom: 5px;
+            border-bottom: 1px dotted #ecf0f1;
+            font-size: 10px;
+        }
+
+        .cert-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .cert-name {
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .cert-issuer {
+            font-size: 9px;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .cert-date {
+            font-size: 9px;
+            color: #95a5a6;
+        }
+
+        /* Print optimizations */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            html, body {
+                width: 8.27in;
+                height: 11.69in;
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+
+            .container {
+                margin: 0;
+                box-shadow: none;
+                height: 11.69in;
+            }
+
+            body {
+                background: white;
+            }
+
+            .main-content {
+                overflow: visible;
+            }
+
+            .main-content::-webkit-scrollbar {
+                display: none;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .main-content {
+                padding: 20px;
+                max-height: none;
+            }
+
+            .main-content::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <img src="assets/img/profile.png" alt="Profile" class="profile-img" />
+                <div class="profile-name">Aditya Gabale</div>
+                <div class="profile-title">Technology Leader & POD Lead</div>
+            </div>
+
+            <!-- Contact -->
+            <div class="sidebar-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <div>📍 Pune, India</div>
+                    <div>📞 +91-7709901311</div>
+                    <div><a href="mailto:adityagabale7@gmail.com">adityagabale7@gmail.com</a></div>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="sidebar-section">
+                <h3>Links</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/adityagabale" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/adityagabale" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Core Skills -->
+            <div class="sidebar-section">
+                <h3>Core Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Java 17</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Microservices</span>
+                    <span class="skill-tag">Kafka</span>
+                    <span class="skill-tag">gRPC</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">SonarQube</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">SQL/NoSQL</span>
+                    <span class="skill-tag">OAuth2</span>
+                </div>
+            </div>
+
+            <!-- Advanced Skills -->
+            <div class="sidebar-section">
+                <h3>Advanced</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Architecture</span>
+                    <span class="skill-tag">Low-Latency</span>
+                    <span class="skill-tag">High Availability</span>
+                    <span class="skill-tag">Backpressure</span>
+                    <span class="skill-tag">Rate Limiting</span>
+                    <span class="skill-tag">Security (OWASP)</span>
+                    <span class="skill-tag">Team Leadership</span>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="sidebar-section">
+                <h3>Certs</h3>
+                <ul style="list-style: none; font-size: 10px;">
+                    <li>✓ PMI Project Management</li>
+                    <li>✓ Solace Consultant</li>
+                    <li>✓ Kubernetes Hands-on</li>
+                    <li>✓ GCP Fundamentals</li>
+                    <li>✓ Oracle Java SE 6</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <h1>Aditya Gabale</h1>
+                <div class="tagline">Associate Director • Technology Leader • 15+ Years in Investment Banking & Low-Latency Systems</div>
+            </div>
+
+            <!-- Summary -->
+            <div class="section">
+                <p style="font-size: 10px; line-height: 1.4; color: #555;">
+                    Proven technology leader with 15 years driving <strong>architecture modernization, delivery excellence, and team growth</strong> in investment banking.
+                    Expert in building <strong>resilient, high-performance platforms</strong> with <strong>Java 17, Spring Boot, microservices, and cloud technologies</strong>.
+                    <strong>Reduced latency from minutes to milliseconds</strong>, delivered <strong>measurable cost savings</strong>, and improved HSBC's <strong>client acquisition success by ~20%</strong>.
+                    Leadership: <strong>20+ direct reports, 40+ indirect contributors</strong> across global teams.
+                </p>
+            </div>
+
+            <!-- Experience -->
+            <div class="section">
+                <div class="section-title">Experience</div>
+
+                <div class="job-entry">
+                    <div class="job-title">Associate Director</div>
+                    <div class="job-company">HSBC · Pune</div>
+                    <div class="job-period">May 2023 – Present</div>
+                    <ul class="highlights">
+                        <li>Lead architecture & delivery for <strong>45+ microservices</strong> across fixed income & payments platforms; achieved <strong>99.95%+ availability</strong>.</li>
+                        <li><strong>Latency reduction</strong> from minutes to milliseconds via advanced caching & routing; <strong>direct dollar savings</strong> & <strong>~20% higher client acquisition success</strong>.</li>
+                        <li>Managed <strong>20+ engineers</strong>; hired, onboarded, mentored, and conducted performance reviews; built high-performing PODs.</li>
+                        <li>Owned <strong>SLOs</strong> for auth latency, timeouts, denial rates; used <strong>error-budget reviews</strong> to prioritize hardening.</li>
+                        <li>Implemented <strong>trunk-based development</strong>, integrated <strong>SonarQube/Checkmarx</strong> into CI/CD for security & quality gates.</li>
+                        <li><strong>Backpressure & rate limiting</strong> strategies (Reactive Streams, Reactor/RxJava, token-bucket) to prevent OOMs and ensure graceful degradation.</li>
+                        <li>Architected <strong>zero-downtime deployments</strong>; automated DR with Jenkins & Rundeck.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-title">Senior Consultant Specialist (AVP)</div>
+                    <div class="job-company">HSBC · Pune</div>
+                    <div class="job-period">Mar 2021 – May 2023</div>
+                    <ul class="highlights">
+                        <li>Application Owner for mission-critical services; managed 100% compliance across all owned services.</li>
+                        <li>Led migration to <strong>Java 17</strong> for Spring services, <strong>eliminating CVEs</strong> and improving performance.</li>
+                        <li>Embedded <strong>OWASP/CWE/SEI-CERT</strong> checks and static analysis in pipelines; enforced peer reviews.</li>
+                        <li>Introduced <strong>TDD/BDD practices</strong> and right-sized testing pyramid (unit, contract, integration).</li>
+                        <li>Led team of high-performing engineers; drove delivery, continuous improvement, and performance reviews.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-title">Consultant Specialist (POD Lead / Tech Lead)</div>
+                    <div class="job-company">HSBC · Pune</div>
+                    <div class="job-period">Mar 2019 – Feb 2021</div>
+                    <ul class="highlights">
+                        <li>Led fixed income projects; split between architecture and hands-on delivery in low-latency trading.</li>
+                        <li>Applied <strong>Observer/Strategy patterns</strong> to optimize throughput and maintainability.</li>
+                        <li>Implemented <strong>backpressure-aware streaming</strong> using Reactor/RxJava, Kafka; consumer pause/resume, exponential backoff.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-title">Senior Software Engineer</div>
+                    <div class="job-company">HSBC · Pune</div>
+                    <div class="job-period">Sep 2016 – Feb 2019</div>
+                    <ul class="highlights">
+                        <li>Led development and modernization of Fixed Income settlement systems; enhanced reliability and performance.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-company">HSBC · Pune</div>
+                    <div class="job-period">Apr 2015 – Sep 2016</div>
+                    <ul class="highlights">
+                        <li>Resolved critical production issues; implemented monitoring and performance enhancements (L3 support).</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-title">Senior Software Engineer</div>
+                    <div class="job-company">Persistent Systems · Pune</div>
+                    <div class="job-period">Apr 2014 – Mar 2015</div>
+                    <ul class="highlights">
+                        <li>IAM product development; built connector library for Oracle E-Business Suite.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-title">Programmer Analyst</div>
+                    <div class="job-company">Cognizant Technology Solutions · Bangalore</div>
+                    <div class="job-period">Dec 2011 – Mar 2014</div>
+                    <ul class="highlights">
+                        <li>SPOC for Azure PaaS product platform; built monitoring plugins and automation tooling; <strong>Above & Beyond</strong> award.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="education-entry">
+                    <div class="degree">Bachelor of Engineering in Computer Science</div>
+                    <div class="university">SVERI's College of Engineering, Solapur University</div>
+                    <div class="grad-year">2007 – 2011</div>
+                </div>
+            </div>
+
+            <!-- Key Certifications -->
+            <div class="section">
+                <div class="section-title">Key Certifications</div>
+                <div class="cert-item">
+                    <div class="cert-name">Project Management Foundations</div>
+                    <div style="display: flex; justify-content: space-between; font-size: 9px;">
+                        <span class="cert-issuer">PMI</span>
+                        <span class="cert-date">Aug 2022</span>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Solace Certified Solution Consultant</div>
+                    <div style="display: flex; justify-content: space-between; font-size: 9px;">
+                        <span class="cert-issuer">Solace</span>
+                        <span class="cert-date">Jun 2021</span>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Kubernetes — Hands-on</div>
+                    <div style="display: flex; justify-content: space-between; font-size: 9px;">
+                        <span class="cert-issuer">Udemy</span>
+                        <span class="cert-date">Jan 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Export to PDF functionality
+        function exportToPDF() {
+            window.print();
+        }
+
+        // Keyboard shortcut: Ctrl+P or Cmd+P
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                exportToPDF();
+            }
+        });
+    </script>
+</body>
+</html>

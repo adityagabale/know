@@ -91,9 +91,12 @@
     </div>
 </nav>
 <!-- Export to PDF button (uses window.print to preserve CSS) -->
-<div style="position:fixed; top:20px; right:30px; z-index:2000;">
-    <button id="exportPdfBtn" class="btn btn-danger btn-sm" title="Export resume to PDF">
-        <i class="fa fa-file-pdf"></i> Export to PDF
+<div style="position:fixed; top:20px; right:30px; z-index:2000; display:flex; gap:10px;">
+    <button id="exportOnePagerBtn" class="btn btn-info btn-sm" title="Open one-page resume">
+        <i class="fa fa-file-pdf"></i> One-Page Resume
+    </button>
+    <button id="exportPdfBtn" class="btn btn-danger btn-sm" title="Export full resume to PDF">
+        <i class="fa fa-file-pdf"></i> Export Full to PDF
     </button>
 </div>
 <!-- Page Content-->
@@ -399,6 +402,11 @@
     // Use the browser's print engine to keep CSS exactly as rendered
     document.getElementById('exportPdfBtn').addEventListener('click', function () {
       window.print();
+    });
+
+    // Open one-page resume in new tab
+    document.getElementById('exportOnePagerBtn').addEventListener('click', function () {
+      window.open('resume.html', '_blank');
     });
 </script>
 </body>

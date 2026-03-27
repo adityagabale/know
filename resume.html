@@ -25,12 +25,13 @@
 
         .container {
             max-width: 8.5in;
-            height: 11in;
+            height: auto;
+            min-height: 11in;
             margin: 20px auto;
             background: white;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             display: flex;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .sidebar {
@@ -41,6 +42,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            overflow: visible;
         }
 
         .profile-section {
@@ -139,22 +141,9 @@
         .main-content {
             flex: 1;
             padding: 30px 25px;
-            overflow-y: auto;
+            overflow: visible;
             font-size: 11px;
             line-height: 1.4;
-        }
-
-        .main-content::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .main-content::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        .main-content::-webkit-scrollbar-thumb {
-            background: #667eea;
-            border-radius: 3px;
         }
 
         .header {
@@ -323,28 +312,99 @@
 
             html, body {
                 width: 8.27in;
-                height: 11.69in;
+                height: auto;
                 margin: 0;
                 padding: 0;
                 background: white;
+                overflow: visible;
             }
 
             .container {
                 margin: 0;
                 box-shadow: none;
-                height: 11.69in;
+                height: auto;
+                overflow: visible;
             }
 
             body {
                 background: white;
+                zoom: 0.88;
+            }
+
+            .sidebar {
+                overflow: visible;
+                max-height: none;
             }
 
             .main-content {
                 overflow: visible;
+                max-height: none;
+                padding-top: 16px;
             }
 
             .main-content::-webkit-scrollbar {
                 display: none;
+            }
+
+            /* Print-only compaction to keep resume on one page */
+            .sidebar {
+                padding: 20px 12px;
+                gap: 10px;
+            }
+
+            .main-content {
+                padding: 16px 16px;
+                font-size: 10px;
+                line-height: 1.25;
+            }
+
+            .header {
+                margin-bottom: 8px;
+                padding-bottom: 6px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+                margin-bottom: 2px;
+            }
+
+            .tagline {
+                font-size: 9px;
+            }
+
+            .section {
+                margin-bottom: 6px;
+            }
+
+            .section-title {
+                margin-bottom: 4px;
+                padding-bottom: 2px;
+            }
+
+            .job-entry {
+                margin-bottom: 5px;
+                padding-bottom: 3px;
+            }
+
+            .highlights {
+                margin-top: 2px;
+                margin-left: 10px;
+            }
+
+            .highlights li {
+                margin-bottom: 0;
+                font-size: 9.1px;
+                line-height: 1.15;
+            }
+
+            .education-entry {
+                margin-bottom: 3px;
+            }
+
+            .cert-item {
+                margin-bottom: 2px;
+                padding-bottom: 2px;
+                font-size: 9px;
             }
 
             a {
